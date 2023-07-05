@@ -59,5 +59,7 @@ docker logs -f streamlink-kick
 ## Credits
 
 [Streamlink](https://github.com/streamlink/streamlink)
+
 [Documentation](https://streamlink.github.io/index.html)
+
 [Kick.com plugin](https://github.com/nonvegan/streamlink-plugin-kick)
