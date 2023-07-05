@@ -42,6 +42,7 @@ docker run --rm --it --name "streamlink-kick" -o "$PWD:/recordings" streamlink-k
 ### Watch stream from remote streamlink
 
 `9000` - is your local port on host machine
+
 `8080` - is port within docker container
 
 ```bash
