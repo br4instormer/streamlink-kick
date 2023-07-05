@@ -28,7 +28,7 @@ docker run --rm -it streamlink-kick https://kick.com/<user>
 Passing uid/gid provide same permissions of recorded file as host user
 
 ```bash
-docker run --rm -d -u "$(id -u):$(id -g)" --name "streamlink-kick" -o "$PWD:/recordings" streamlink-kick https://kick.com/<user> <quality>
+docker run --rm -d --name "streamlink-kick" -o "$PWD:/recordings" streamlink-kick https://kick.com/<user> <quality>
 ```
 
 ### Record VOD/stream in current local directory. Interactive mode
