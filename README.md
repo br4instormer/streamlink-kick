@@ -17,6 +17,12 @@ docker build -t streamlink-kick:latest --build-arg={uid=$(id -u),gid=$(id -g)} .
 
 ## Using
 
+### Get stream information
+
+```bash
+docker run --rm -it streamlink-kick https://kick.com/<user>
+```
+
 ### Record VOD/stream in current local directory. Detached mode
 
 Passing uid/gid provide same permissions of recorded file as host user
