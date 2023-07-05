@@ -11,6 +11,7 @@ The receipts below tested and work on Linux
 ### Build an image
 
 ```bash
+wget https://raw.githubusercontent.com/br4instormer/streamlink-kick/main/Dockerfile
 docker build -t streamlink-kick:latest --build-arg={uid=$(id -u),gid=$(id -g)} .
 ```
 
