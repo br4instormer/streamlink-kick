@@ -25,10 +25,8 @@ docker run --rm -it streamlink-kick https://kick.com/<user>
 
 ### Record VOD/stream in current local directory. Detached mode
 
-Passing uid/gid provide same permissions of recorded file as host user
-
 ```bash
-docker run --rm -d --name "streamlink-kick" -o "$PWD:/recordings" streamlink-kick https://kick.com/<user> <quality>
+docker run --rm -d --name "streamlink-kick" -v "$PWD:/recordings" streamlink-kick -o "<output_file_name>" https://kick.com/<user> <quality>
 ```
 
 ### Record VOD/stream in current local directory. Interactive mode
@@ -36,7 +34,7 @@ docker run --rm -d --name "streamlink-kick" -o "$PWD:/recordings" streamlink-kic
 You can stop recording with `CTRL+C`
 
 ```bash
-docker run --rm --it --name "streamlink-kick" -o "$PWD:/recordings" streamlink-kick https://kick.com/<user> <quality>
+docker run --rm --it --name "streamlink-kick" -v "$PWD:/recordings" streamlink-kick -o "<output_file_name>" https://kick.com/<user> <quality>
 ```
 
 ### Watch stream from remote streamlink
