@@ -24,7 +24,7 @@ WORKDIR $catalog
 RUN mkdir -p "$plugin_path" \ 
     && wget -O "$plugin_file_path" "$plugin_url"
 
-VOLUME [ "$catalog" ]
+LABEL org.opencontainers.image.source https://github.com/br4instormer/streamlink-kick
 
 ENTRYPOINT [ "streamlink" ]
 CMD [ "--help" ]
